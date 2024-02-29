@@ -1,5 +1,5 @@
-export default function Counter () {
+export default function Counter ({notes}) {
   return (
-    <p>Compteur notes : 42</p>
+    <p>Compteur notes : {notes.length}</p>
   )
 }

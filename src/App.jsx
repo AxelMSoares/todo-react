@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <h1>{title}</h1>
-      < Counter />
+      < Counter notes = {notes} />
       < AddNoteForm />
       < Search />
       < NoteList notes = {notes} onRemoveBtn = {onRemoveNoteBtnHandler} />
