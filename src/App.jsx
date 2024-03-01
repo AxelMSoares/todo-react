@@ -17,7 +17,7 @@ function App() {
     {id : 2, text: "Seconde note"},
     {id : 3, text: "Troisieme note"}
   ])
-  
+
   
   function onRemoveNoteBtnHandler(noteToDelete) {
     console.log('click on remove index: ', noteToDelete);
