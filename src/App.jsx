@@ -25,11 +25,17 @@ function App() {
     SetNotes(newNotes);
   }
 
+  function onAddNoteBtnHandler (noteToAdd){
+    const updatedNotes = [...notes];
+    updatedNotes.push(noteToAdd);
+    SetNotes(updatedNotes);
+  }
+
   return (
     <>
       <h1>{title}</h1>
       < Counter notes = {notes} />
-      < AddNoteForm />
+      < AddNoteForm notes = {notes} onAddBtn = {onAddNoteBtnHandler}/>
       < Search />
       < NoteList notes = {notes} onRemoveBtn = {onRemoveNoteBtnHandler} />
     </>
