@@ -18,6 +18,7 @@ function App() {
     {id : 3, text: "Troisieme note"}
   ])
   
+  
   function onRemoveNoteBtnHandler(noteToDelete) {
     console.log('click on remove index: ', noteToDelete);
     const newNotes = notes.filter(note => note.id !== noteToDelete.id);
