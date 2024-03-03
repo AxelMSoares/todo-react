@@ -1,4 +1,4 @@
-export default function NoteListItem (note) {
+export default function NoteListItem(note) {
   return (
     <div>{note.text}</div>
   )

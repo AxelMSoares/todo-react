@@ -1,11 +1,11 @@
 import NoteListItem from './NoteListItem';
 
-export default function NoteList ( {notes, onRemoveBtn} ) {
+export default function NoteList({ notes, onRemoveBtn }) {
 
-    const listNotes = notes.map( (note, index) => 
-        <li key = {index} >
+    const listNotes = notes.map((note, index) =>
+        <li key={index} >
             {note.text}
-            &nbsp;  <button onClick ={(event)=>onRemoveBtn(note)} >X</button>
+            &nbsp;  <button onClick={(event) => onRemoveBtn(note)} >X</button>
         </li>
     );
 
@@ -13,7 +13,7 @@ export default function NoteList ( {notes, onRemoveBtn} ) {
         <>
             <p> A Note List </p>
             <ul>
-                { listNotes }
+                {listNotes}
             </ul>
         </>
     )

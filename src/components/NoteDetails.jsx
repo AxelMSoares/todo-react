@@ -1,4 +1,4 @@
-export default function NoteDetails () {
+export default function NoteDetails() {
     return (
         <p></p>
     )
